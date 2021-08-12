@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../styles/SectionHeader.module.scss';
+import * as styles from '../../styles/SectionHeader.module.scss';
 
 export const SectionHeader = ({ title }) => {
-  return <h6 className="section-header">{title}</h6>;
+  return <h6 className={styles.sectionHeader}>{title}</h6>;
 };

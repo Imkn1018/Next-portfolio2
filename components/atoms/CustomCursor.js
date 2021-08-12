@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import '../../styles/CustomCursor.module.scss';
+import * as styles from '../../styles/CustomCursor.module.scss';
 // import CustomCursorContext from "./context/CustomCursorContext";
 
 // TODO: Hide if cursor not moved
@@ -68,7 +68,7 @@ export const CustomCursor = () => {
   }, []);
   return (
     <div className={`cursor-wrapper default`}>
-      <div className="secondary-cursor" ref={secondaryCursor}></div>
+      <div className={styles.secondaryCursor} ref={secondaryCursor}></div>
     </div>
   );
 };

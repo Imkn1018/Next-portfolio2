@@ -1,16 +1,16 @@
 import React from 'react';
 import photos from '../../data/photos';
-import '../../styles/Feature.module.scss';
+import * as styles from '../../styles/Feature.module.scss';
 
 export const Featured = () => {
   const [firstImage, secondImage] = photos;
   return (
-    <section className="featured-section" data-scroll-section>
-      <div className="featured-row-layout">
+    <section className={styles.featuredSection} data-scroll-section>
+      <div className={styles.featuredRowLayout}>
         <h6>green</h6>
         <img src={firstImage} data-scroll />
       </div>
-      <div className="featured-column-layout">
+      <div className={styles.featuredColumnLayout}>
         <h6>lily</h6>
         <img src={secondImage} data-scroll />
       </div>

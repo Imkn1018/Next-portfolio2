@@ -1,4 +1,4 @@
-.secondary-cursor {
+.secondaryCursor {
   z-index: 1000;
   border-radius: 50%;
   pointer-events: none;
@@ -20,7 +20,7 @@
   }
 }
 
-.secondary-cursor {
+.secondaryCursor {
   z-index: 10000;
 
   pointer-events: none;
@@ -29,7 +29,7 @@
   position: fixed;
 }
 
-.secondary-cursor {
+.secondaryCursor {
   width: 30px;
   height: 30px;
 }

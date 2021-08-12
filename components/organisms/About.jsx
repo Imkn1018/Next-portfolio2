@@ -7,7 +7,7 @@ import gsap from 'gsap';
 import SplitText from '../../utils/Split3.min';
 import { useOnScreen } from '../../hooks/useOnScreen';
 
-import '../../styles/About.module.scss';
+import * as styles from '../../styles/About.module.scss';
 
 export const About = () => {
   const ref = useRef(null);
@@ -36,7 +36,7 @@ export const About = () => {
 
   return (
     <section
-      className={cn('about-section', { 'is-reveal': reveal })}
+      className={(styles['about-section'], { 'is-reveal': reveal })}
       data-scroll-section
     >
       <SectionHeader title="about" />

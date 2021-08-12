@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 import { Navbar } from '../organisms/Navbar';
-// import Footer from '../components/Footer';
+import { Footer } from '../organisms/Footer';
 import { CustomCursor } from '../atoms/CustomCursor';
 import { Header } from '../organisms/Header';
 import { Featured } from '../organisms/Featured';
 import { About } from '../organisms/About';
-// import Gallery from '../components/Gallery';
+import { Gallery } from '../organisms/Gallery';
 
 import useLocoScroll from '../../hooks/useScroll';
 
@@ -69,8 +69,8 @@ const Home = () => {
           <Header />
           <Featured />
           <About />
-          {/* <Gallery />
-          <Footer /> */}
+          <Gallery />
+          <Footer />
         </div>
       )}
     </>

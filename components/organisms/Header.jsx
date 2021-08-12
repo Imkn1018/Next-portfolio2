@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import SplitText from '../../utils/Split3.min';
 
-import '../../styles/Header.module.scss';
+import * as styles from '../../styles/Header.module.scss';
 
 export const Header = () => {
   useEffect(() => {
@@ -14,7 +14,7 @@ export const Header = () => {
 
     const splitParent = new SplitText('#header-text', {
       type: 'lines',
-      linesClass: 'lineParent',
+      linesClass: `lineParent`,
     });
 
     gsap.to(split.lines, {
@@ -26,8 +26,8 @@ export const Header = () => {
     });
   }, []);
   return (
-    <section className="header-container" data-scroll-section>
-      <ul className="header-menu">
+    <section className={styles.headerContainer} data-scroll-section>
+      <ul className={styles.headerMenu}>
         <li>Intro</li>
         <li>About</li>
         <li>Featured</li>
